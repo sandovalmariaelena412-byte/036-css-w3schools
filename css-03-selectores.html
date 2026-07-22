@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CSS 03 - CSS Selectors</title>
+<style>
+p {
+  text-align: center;
+  color: red;
+}
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+p.center {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+<p id="para1">Hello World!</p>
+<p>This paragraph is not affected by the id selector.</p>
+
+<h1 class="center">Red and center-aligned heading</h1>
+<p class="center">Red and center-aligned paragraph.</p>
+
+<p class="center large">This paragraph refers to two classes.</p>
+</body>
+</html>
