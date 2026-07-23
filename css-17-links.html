@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.basic a {
+  color: hotpink;
+}
+
+/* unvisited link */
+a.simple1:link {color: red;}
+/* visited link */
+a.simple1:visited {color: green;}
+/* mouse over link */
+a.simple1:hover {color: hotpink;}
+/* selected link */
+a.simple1:active {color: blue;}
+
+a.nounderline:link {text-decoration: none;}
+a.nounderline:visited {text-decoration: none;}
+a.nounderline:hover {text-decoration: underline;}
+a.nounderline:active {text-decoration: underline;}
+
+a.bgcolor:link {background-color: yellow;}
+a.bgcolor:visited {background-color: cyan;}
+a.bgcolor:hover {background-color: lightgreen;}
+a.bgcolor:active {background-color: hotpink;}
+
+a.btn1:link, a.btn1:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.btn1:hover, a.btn1:active {
+  background-color: red;
+}
+
+a.btn2:link, a.btn2:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.btn2:hover, a.btn2:active {
+  background-color: green;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Styling Links</h1>
+<p>Los enlaces se pueden estilizar con cualquier propiedad CSS (color, font-family, background, etc.). Ademas, se pueden estilizar de forma distinta dependiendo del estado en que se encuentren.</p>
+
+<h2>Text Link</h2>
+<p class="basic"><a href="#">Este es un enlace basico con color.</a></p>
+
+<h2>Los 4 estados de un enlace</h2>
+<p>a:link (enlace normal, no visitado), a:visited (enlace visitado), a:hover (cuando el mouse pasa por encima), a:active (el momento en que se hace clic).</p>
+<p><a class="simple1" href="#">Enlace con color segun su estado</a></p>
+<p>Reglas de orden: a:hover debe ir despues de a:link y a:visited. a:active debe ir despues de a:hover.</p>
+
+<h2>Quitar el subrayado</h2>
+<p><a class="nounderline" href="#">Enlace sin subrayado hasta que se pasa el mouse</a></p>
+
+<h2>Color de fondo en enlaces</h2>
+<p><a class="bgcolor" href="#">Enlace con color de fondo segun su estado</a></p>
+
+<h2>Link Button</h2>
+<p>Se pueden combinar varias propiedades CSS para mostrar los enlaces como cajas o botones.</p>
+<a class="btn1" href="#">Link Button</a>
+
+<h2>Link Button con bordes</h2>
+<a class="btn2" href="#">Link Button</a>
+
+</body>
+</html>
