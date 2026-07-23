@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+.calculo {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<h2>Demonstrating the Box Model</h2>
+<p>The CSS box model is essentially a box that wraps around every HTML element.</p>
+<p>It consists of (from innermost part to outermost part): content, padding, border, and margin.</p>
+<div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<h2>Calculate the total width and height</h2>
+<div class="calculo">This div element will have a total width of 350px and a total height of 80px.</div>
+
+<h3>Let's do the math</h3>
+<p>320px (width of content area) + 20px (left padding + right padding) + 10px (left border + right border) + 0px (left margin + right margin) = 350px (total width)</p>
+<p>50px (height of content area) + 20px (top padding + bottom padding) + 10px (top border + bottom border) + 0px (top margin + bottom margin) = 80px (total height)</p>
+
+<h3>Formulas</h3>
+<p>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</p>
+<p>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+<p>Nota: la propiedad margin tambien afecta el espacio total que ocupa la caja en la pagina, pero el margin no se incluye en el tamano real de la caja (el ancho y alto total terminan en el borde).</p>
+
+</body>
+</html>
