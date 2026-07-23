@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {color: blue;}
+h2 {color: green;}
+p {color: red;}
+p.ex {color: rgb(0,0,255);}
+
+.center {text-align: center;}
+.right {text-align: right;}
+.left {text-align: left;}
+.justify {text-align: justify;}
+
+.underline {text-decoration: underline;}
+.overline {text-decoration: overline;}
+.linethrough {text-decoration: line-through;}
+.nounderline {text-decoration: none;}
+a.linkcolor {text-decoration: none;}
+
+.upper {text-transform: uppercase;}
+.lower {text-transform: lowercase;}
+.capitalize {text-transform: capitalize;}
+
+.spacing1 {letter-spacing: 2px;}
+.spacing2 {letter-spacing: -1px;}
+.linehg {line-height: 1.8;}
+.wordsp {word-spacing: 10px;}
+.indent {text-indent: 50px;}
+
+.shadow1 {text-shadow: 2px 2px 5px red;}
+.shadow2 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Text</h1>
+
+<h2>Text Color</h2>
+<p>Para establecer el color del texto se usa la propiedad color.</p>
+<h1>Titulo con color</h1>
+<p>Parrafo con color rojo.</p>
+<p class="ex">Parrafo con color usando RGB.</p>
+
+<h2>Text Alignment</h2>
+<p>La propiedad text-align se usa para establecer la alineacion horizontal del texto.</p>
+<p class="center">Texto centrado.</p>
+<p class="left">Texto alineado a la izquierda.</p>
+<p class="right">Texto alineado a la derecha.</p>
+<p class="justify">Texto justificado. Justificar el texto hace que cada linea se estire de modo que cada linea tenga el mismo ancho, y los margenes izquierdo y derecho queden rectos.</p>
+
+<h2>Text Decoration</h2>
+<p>La propiedad text-decoration se usa para agregar decoraciones al texto.</p>
+<p class="underline">Texto subrayado.</p>
+<p class="overline">Texto con linea arriba.</p>
+<p class="linethrough">Texto tachado.</p>
+<a href="#" class="nounderline">Enlace sin subrayado</a>
+
+<h2>Text Transformation</h2>
+<p>La propiedad text-transform se usa para especificar mayusculas y minusculas en un texto.</p>
+<p class="upper">Este texto se transforma a mayusculas.</p>
+<p class="lower">Este texto se transforma a minusculas.</p>
+<p class="capitalize">esta primera letra de cada palabra se transforma a mayuscula.</p>
+
+<h2>Text Spacing</h2>
+<p>Propiedades relacionadas con el espaciado del texto: letter-spacing, line-height, word-spacing y text-indent.</p>
+<p class="spacing1">Texto con espaciado entre letras aumentado.</p>
+<p class="spacing2">Texto con espaciado entre letras reducido.</p>
+<p class="linehg">Esta linea tiene una altura de linea mayor a lo normal, para que el texto se lea con mas espacio entre lineas cuando ocupa varias lineas.</p>
+<p class="wordsp">Texto con espaciado entre palabras aumentado.</p>
+<p class="indent">Este parrafo tiene la primera linea con sangria, gracias a la propiedad text-indent.</p>
+
+<h2>Text Shadow</h2>
+<p>La propiedad text-shadow agrega sombra al texto.</p>
+<h1 class="shadow1">Titulo con sombra simple</h1>
+<h1 class="shadow2">Titulo con efecto de brillo (glow)</h1>
+
+</body>
+</html>
