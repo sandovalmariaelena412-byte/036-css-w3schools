@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+
+table.collapse, table.collapse th, table.collapse td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.width100 {
+  width: 100%;
+}
+thead.width25 th {
+  width: 25%;
+}
+table.width100 th, table.width100 td {
+  padding: 8px;
+}
+
+table.align td, table.align th {
+  padding: 8px;
+}
+.centrado {text-align: center;}
+.vtop td {height: 50px; vertical-align: top;}
+
+table.style th, table.style td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table.style tr:hover {background-color: coral;}
+table.style tr:nth-child(even) {background-color: #f2f2f2;}
+table.style th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.responsive-container {
+  overflow-x: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Styling Tables</h1>
+
+<h2>Table Borders</h2>
+<p>Para especificar bordes en CSS, se usa la propiedad border.</p>
+<table>
+  <tr><th>Firstname</th><th>Lastname</th></tr>
+  <tr><td>Peter</td><td>Griffin</td></tr>
+</table>
+<p>Nota: la tabla de arriba tiene bordes dobles, porque table, th y td tienen bordes separados. Para eliminar los bordes dobles, se usa border-collapse.</p>
+<table class="collapse">
+  <tr><th>Firstname</th><th>Lastname</th></tr>
+  <tr><td>Peter</td><td>Griffin</td></tr>
+</table>
+
+<h2>Table Size</h2>
+<p>El ancho y la altura de una tabla se definen con las propiedades width y height.</p>
+<table class="width100">
+  <thead class="width25">
+    <tr><th>Firstname</th><th>Lastname</th><th>Savings</th></tr>
+  </thead>
+  <tr><td>Peter</td><td>Griffin</td><td>$100</td></tr>
+</table>
+
+<h2>Table Alignment</h2>
+<p>La propiedad text-align establece la alineacion horizontal del contenido en th o td. La propiedad vertical-align establece la alineacion vertical.</p>
+<table class="align">
+  <tr><th class="centrado">Firstname</th><th class="centrado">Lastname</th></tr>
+  <tr><td class="centrado">Peter</td><td class="centrado">Griffin</td></tr>
+</table>
+<table class="vtop">
+  <tr><td>Peter</td><td>Griffin</td></tr>
+</table>
+
+<h2>Table Style</h2>
+<p>Se puede agregar padding, dividers horizontales, hover y estilo zebra a una tabla.</p>
+<table class="style">
+  <tr><th>Firstname</th><th>Lastname</th><th>Savings</th></tr>
+  <tr><td>Peter</td><td>Griffin</td><td>$100</td></tr>
+  <tr><td>Lois</td><td>Griffin</td><td>$150</td></tr>
+  <tr><td>Joe</td><td>Swanson</td><td>$300</td></tr>
+</table>
+
+<h2>Responsive Table</h2>
+<p>Una tabla responsive mostrara una barra de desplazamiento horizontal si la pantalla es demasiado pequena para mostrar todo el contenido. Se agrega un elemento contenedor (como div) con overflow-x:auto alrededor del elemento table.</p>
+<div class="responsive-container">
+  <table class="style">
+    <tr><th>Firstname</th><th>Lastname</th><th>Savings</th><th>Country</th><th>City</th></tr>
+    <tr><td>Peter</td><td>Griffin</td><td>$100</td><td>USA</td><td>Quahog</td></tr>
+  </table>
+</div>
+
+</body>
+</html>
