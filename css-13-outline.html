@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+p.none {outline-style: none;}
+p.hidden {outline-style: hidden;}
+
+p.ex1 {outline-style: solid; outline-width: thin;}
+p.ex2 {outline-style: solid; outline-width: medium;}
+p.ex3 {outline-style: solid; outline-width: thick;}
+p.ex4 {outline-style: solid; outline-width: 4px;}
+
+p.color1 {outline-style: solid; outline-color: red;}
+p.color2 {outline-style: dotted; outline-color: blue;}
+p.color3 {outline-style: outset; outline-color: green;}
+
+p.shorthand {outline: 5px solid yellow;}
+
+div.offset {
+  margin: 30px;
+  padding: 5px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 3px solid red;
+  outline-offset: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Outline</h1>
+<p>La propiedad outline agrega una linea alrededor de un elemento, fuera del borde, para hacerlo "destacar". Nota: el outline no es parte de las dimensiones del elemento; el ancho y alto total del elemento no se ven afectados por el ancho del outline.</p>
+
+<h2>Outline Style</h2>
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline</p>
+<p class="ridge">A ridge outline</p>
+<p class="inset">An inset outline</p>
+<p class="outset">An outset outline</p>
+<p class="none">No outline</p>
+<p class="hidden">A hidden outline</p>
+
+<h2>Outline Width</h2>
+<p class="ex1">Thin outline</p>
+<p class="ex2">Medium outline</p>
+<p class="ex3">Thick outline</p>
+<p class="ex4">4px outline</p>
+
+<h2>Outline Color</h2>
+<p class="color1">Red outline</p>
+<p class="color2">Blue dotted outline</p>
+<p class="color3">Green outset outline</p>
+
+<h2>Outline Shorthand</h2>
+<p>Para acortar el codigo, es posible especificar todas las propiedades de outline en una sola: outline-width outline-style outline-color.</p>
+<p class="shorthand">Yellow solid outline, using the shorthand property</p>
+
+<h2>Outline Offset</h2>
+<p>La propiedad outline-offset agrega espacio entre un outline y el borde/edge de un elemento. El espacio entre un elemento y su outline es transparente.</p>
+<div class="offset">The outline-offset is 15px</div>
+
+</body>
+</html>
