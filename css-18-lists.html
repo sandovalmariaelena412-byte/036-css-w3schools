@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.circle {list-style-type: circle;}
+.square {list-style-type: square;}
+.upperroman {list-style-type: upper-roman;}
+.lowerarabic {list-style-type: none;}
+
+.imagen {list-style-image: url('https://www.w3schools.com/csS/sqpurple.gif');}
+
+.inside {list-style-position: inside;}
+.outside {list-style-position: outside;}
+
+.nomarker {list-style-type: none;}
+
+.nostyle {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shorthand {list-style: square inside;}
+</style>
+</head>
+<body>
+
+<h1>CSS Styling Lists</h1>
+<p>La propiedad list-style-type especifica el tipo de marcador de lista (bullet).</p>
+
+<h2>Different List Item Markers</h2>
+<ul class="circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<ul class="square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<ol class="upperroman">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<h2>An Image as The List Item Marker</h2>
+<p>La propiedad list-style-image especifica una imagen como marcador del elemento de lista. Nota: siempre se debe especificar tambien list-style-type, por si la imagen no esta disponible.</p>
+<ul class="imagen">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>Position The List Item Markers</h2>
+<p>La propiedad list-style-position especifica la posicion de los marcadores.</p>
+<h3>outside (por defecto): el marcador queda fuera del elemento de la lista</h3>
+<ul class="outside">
+  <li>Coffee - Este texto es una descripcion muy larga que ocupara mas de una linea. Se puede ver que el marcador esta fuera de la lista y la segunda linea del texto no queda alineada con el marcador.</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<h3>inside: el marcador queda dentro del elemento de la lista</h3>
+<ul class="inside">
+  <li>Coffee - Este texto es una descripcion muy larga que ocupara mas de una linea. Se puede ver que el marcador esta dentro de la lista y forma parte del texto, empujandolo desde el inicio.</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>Remove Default Settings</h2>
+<p>La propiedad list-style-type:none; se usa para eliminar los marcadores de los elementos de lista. Nota: una lista tiene margen y padding por defecto, para eliminarlos se agrega margin:0 y padding:0 al ul o ol.</p>
+<ul class="nostyle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>List - Shorthand property</h2>
+<p>La propiedad list-style es una forma abreviada. El orden de los valores es: list-style-type, list-style-position, list-style-image.</p>
+<ul class="shorthand">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
