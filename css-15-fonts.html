@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.p1 { font-family: "Times New Roman", Times, serif; }
+.p2 { font-family: Arial, Helvetica, sans-serif; }
+.p3 { font-family: "Lucida Console", "Courier New", monospace; }
+
+.safe { font-family: Tahoma, Verdana, sans-serif; }
+
+.normal { font-style: normal; }
+.italic { font-style: italic; }
+.oblique { font-style: oblique; }
+
+.small { font-size: 10px; }
+.medium { font-size: 20px; }
+.large { font-size: 40px; }
+.percent { font-size: 150%; }
+
+.shorthand {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Fonts</h1>
+
+<h2>Font Family</h2>
+<p>La propiedad font-family debe contener varios nombres de fuente como sistema de "respaldo" (fallback). Si el navegador no soporta la primera fuente, prueba con la siguiente. Siempre se debe terminar con una familia generica.</p>
+<p class="p1">Este parrafo se muestra en Times New Roman.</p>
+<p class="p2">Este parrafo se muestra en Arial.</p>
+<p class="p3">Este parrafo se muestra en Lucida Console.</p>
+
+<h2>Font Web Safe</h2>
+<p>Las fuentes web safe son fuentes que estan disponibles en casi todos los sistemas y navegadores. Arial es una de las fuentes web mas seguras, esta disponible en casi todos los sistemas operativos.</p>
+
+<h2>Font Fallbacks</h2>
+<p>Siempre es importante usar fuentes de respaldo: una lista de fuentes similares en la propiedad font-family. Si la primera no funciona, el navegador prueba la siguiente, y asi sucesivamente.</p>
+<p class="safe">Este texto usa Tahoma, con Verdana y sans-serif como respaldo.</p>
+
+<h2>Font Style</h2>
+<p>La propiedad font-style se usa principalmente para mostrar texto en italica.</p>
+<p class="normal">Este parrafo usa el estilo normal.</p>
+<p class="italic">Este parrafo usa el estilo italica.</p>
+<p class="oblique">Este parrafo usa el estilo obliqua.</p>
+
+<h2>Font Size</h2>
+<p>La propiedad font-size establece el tamano del texto.</p>
+<p class="small">Texto pequeno (10px).</p>
+<p class="medium">Texto mediano (20px).</p>
+<p class="large">Texto grande (40px).</p>
+<p class="percent">Texto con tamano en porcentaje (150%).</p>
+
+<h2>Font Shorthand</h2>
+<p>Para acortar el codigo, es posible especificar todas las propiedades de fuente en una sola declaracion.</p>
+<p class="shorthand">Este parrafo combina font-style, font-weight, font-size y font-family en una sola linea.</p>
+
+</body>
+</html>
